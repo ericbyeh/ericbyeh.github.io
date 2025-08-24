@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Index Skip</title>
+    <style>
+      a.skipnav {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        border: 0;
+        height: 1px; 
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        width: 1px;
+        white-space: nowrap;
+      }
+      a.skipnav:focus {
+        clip:auto;
+        left:0;
+        top:0;
+        width:100%;
+        height:auto;
+        margin:0;
+        padding:10px 0;
+        background:#fdf6e7;
+        border:2px solid #990000;
+        border-left:none;
+        border-right:none;
+        text-align:center;
+        font-weight:bold;
+        color:#990000;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOM fully loaded and parsed");
+      });
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skipnav">Skip to main content</a>
+    <header>
+      <a href="https://healthy.kaiserpermanente.org/">Kaiser</a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="skip-link-body.html">Body</a></li>
+        <li><a href="skip-link-header.html">Header</a></li>
+        <li><a href="skip-link-tabindex.html">Tab Index</a></li>
+        <li><a href="skip-link-javascript.html">JavaScript</a></li>
+      </ul>>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+      <h1>The best foods to help you sleep — fruits, snacks, and more</h1>
+      <p>Getting enough sleep is an important part of a healthy lifestyle. It can keep your immune system strong, improve your mood, and help you feel less stressed. Yet 1 in 3 adults don't get the recommended amount of sleep. And during times of personal or professional stress, it can be even harder to sleep well.</p>
+      <p>If you're struggling to sleep through the night, one good first step is to look at your diet. Certain foods can help you sleep better. And you may already have some of them in your kitchen. So, what can you eat during the day to set yourself up for a good night's rest?</p>
+      <h2>3 foods to help with sleep</h2>
+      <p>In general, it's best to eat a healthy diet full of fruits and vegetables, lean protein, and whole grains. Having a balanced diet can help with your overall health, including your sleep. Here are 3 foods that are easy to add to your diet to help you sleep better.</p>
+      <h3>Nuts</h3>
+      <p>Not only are many nuts high in heart-healthy fat, but some also have the hormone melatonin. Melatonin helps regulate your sleep-wake cycle.</p>
+      <h3>Fruit</h3>
+      <p>Another healthy option that can help you sleep well? Fruit. Bananas, oranges, pineapple, and tart cherries are all fruits that have melatonin.</p>
+    </main>
+
+    <aside>
+      <h2>A keyboard-functional "skip" link SHOULD be provided to allow keyboard users to navigate directly to the main content.</h2>
+      <p>Some browsers, such as Safari, require the link destination to either be natively focusable (such as a link, button, or form element), or have a tabindex value to function correctly. If the link is not focusable and does not have a tabindex value, the viewport will scroll down to the appropriate place, but when the user presses the tab key, the focus will jump back up to the next link after the "skip navigation" link, when it should jump to the next link after the destination. This behavior defeats the purpose of "skip navigation" links. Assigning tabindex="-1" to the destination fixes this behavior (and does not interfere with the natural tab order of the content on the page, because a tabindex value of -1 keeps the element out of the natural tab order).</p>
+      <h2>The "skip link" SHOULD be the first focusable element on the page.</h2>
+      <code>A "skip navigation link" should be placed at the very beginning of the document, right after the opening <body> tag, to allow users to go past repetitive navigation, such as global navigation menus. It should point to the id at or just before the beginning of the main content on the page. Often the appropriate destination is the <h1> at the beginning of the main content. Putting the "skip navigation" link further down the page would defeat its purpose.</code>
+    </aside>
+
+    <footer>
+      <ol>
+        <li><a href="index.html">Index</a></li>
+      </ol>>
+    </footer>
+  </body>
+</html>
