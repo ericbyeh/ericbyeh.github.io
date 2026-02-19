@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Test</title>
+    <style>
+
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOM fully loaded and parsed");
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+        <a href="https://healthy.kaiserpermanente.org/">Kaiser</a>
+    </header>
+
+    <main>
+      <h1>Input Requirement and Validation Test</h1>
+       <div>
+        <label for="i0">Baseline</label>
+        <input id="i0" name="i0" type="text" />
+      </div>
+      <div>
+        <label for="i1">HTML Require Attribute</label>
+        <input required id="i1" name="i2" type="text" />
+      </div>
+      <div>
+        <label for="i2">Aria Required True</label>
+        <input aria-required="true" id="i2" name="i2" type="text" />
+      </div>
+      <div>
+        <label for="i3">Aria Required False</label>
+        <input aria-required="false" id="i3" name="i3" type="text" />
+      </div>
+      <div>
+        <label for="i4">Aria Invalid True</label>
+        <input aria-invalid="true" id="i4" name="i4" type="text" />
+      </div>
+      <div>
+        <label for="i5">Aria Invalid False</label>
+        <input aria-invalid="false" id="i5" name="i5" type="text" />
+      </div>
+      <div>
+        <label for="i6">Aria Invalid NULL</label>
+        <input id="i6" name="i6" type="text" />
+      </div>
+      <div>
+        <label for="i7">Aria Required + Invalid</label>
+        <input aria-required="true" aria-invalid="false" id="i7" name="i7" type="text" />
+      </div>
+      <div>
+        <label for="i8">HTML Required + Aria Required + Invalid</label>
+        <input required aria-required="true" aria-invalid="false" id="i8" name="i8" type="text" />
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>
