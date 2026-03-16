@@ -19,8 +19,38 @@
     </header>
 
     <main>
-      <h1></h1>
+      <h1>Aria Menu Demo</h1>
 
+      <h2>li as menuitem</h2>
+      <div>
+        <button id="menubutton2" aria-haspopup="true" aria-controls="menu2">
+          hamburger 2
+        </button>
+        <ul id="menu2" role="menu" aria-labelledby="menubutton2">
+          <li role="menuitem">
+            <span>Description</span>
+          </li>
+          <li role="menuitem">
+            <span>Associated WAI-ARIA roles, states, and properties</span>
+          </li>
+          <li role="menuitem">
+            <span>
+              Keyboard interactions
+            </span>
+          </li>
+          <li role="menuitem">
+            <span>Examples</span>
+          </li>
+          <li role="menuitem">
+            <span>Specifications</span>
+          </li>
+          <li role="menuitem">
+            <span>See Also</span>
+          </li>
+        </ul>
+      </div>
+
+      <h2>MDN - ARIA: menuitem role</h2>
       <div>
         <button id="menubutton" aria-haspopup="true" aria-controls="menu">
           hamburger menu
