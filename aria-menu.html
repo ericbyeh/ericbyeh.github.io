@@ -21,10 +21,25 @@
     <main>
       <h1>Aria Menu Demo</h1>
 
+      <h2>li as menuitem with tabindex 0</h2>
+      <div>
+        <button id="menubutton5" aria-haspopup="true" aria-controls="menu5">
+          ham 5
+        </button>
+        <ul id="menu5" role="menu" aria-labelledby="menubutton5">
+          <li role="menuitem" tabindex="0">Description</li>
+          <li role="menuitem" tabindex="0">Keyboard</li>
+          <li role="menuitem" tabindex="0">Example</li>
+        </ul>
+      </div>
+      <p>menuitem repeats in iOS VoiceOver</p>
+
+
+
       <h2>li as menuitem with tabindex -1</h2>
       <div>
         <button id="menubutton4" aria-haspopup="true" aria-controls="menu4">
-          ham 3
+          ham 4
         </button>
         <ul id="menu4" role="menu" aria-labelledby="menubutton4">
           <li role="menuitem" tabindex="-1">Description</li>
@@ -33,6 +48,8 @@
         </ul>
       </div>
       <p>menuitem repeats in iOS VoiceOver</p>
+
+
 
       <h2>li as menuitem</h2>
       <div>
