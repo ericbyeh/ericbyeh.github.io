@@ -21,6 +21,53 @@
     <main>
       <h1>Aria Menu Demo</h1>
 
+      <h2>li as menuitem with span + img inside with tabindex -1</h2>
+      <div>
+        <button id="menubutton7" aria-haspopup="true" aria-controls="menu7">
+          hamburger 2
+        </button>
+        <ul id="menu7" role="menu" aria-labelledby="menubutton7">
+          <li role="menuitem" tabindex="-1">
+            <span>Description</span>
+            <img src="check.jpg" alt="" />
+          </li>
+          <li role="menuitem" tabindex="-1">
+            <span>Examples</span>
+            <img src="check.jpg" alt="" />
+          </li>
+          <li role="menuitem" tabindex="-1">
+            <span>Specifications</span>
+            <img src="check.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <p>menuitem repeats in iOS VoiceOver</p>
+
+      <h2>li as menuitem with span + img inside</h2>
+      <div>
+        <button id="menubutton6" aria-haspopup="true" aria-controls="menu6">
+          hamburger 2
+        </button>
+        <ul id="menu6" role="menu" aria-labelledby="menubutton6">
+          <li role="menuitem">
+            <span>Description</span>
+            <img src="check.jpg" alt="" />
+          </li>
+          <li role="menuitem">
+            <span>Examples</span>
+            <img src="check.jpg" alt="" />
+          </li>
+          <li role="menuitem">
+            <span>Specifications</span>
+            <img src="check.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <p>menuitem repeats in iOS VoiceOver</p>
+
+
+      
+
       <h2>li as menuitem with tabindex 0</h2>
       <div>
         <button id="menubutton5" aria-haspopup="true" aria-controls="menu5">
