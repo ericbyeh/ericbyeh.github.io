@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria - Menu</title>
+    <style>
+
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOM fully loaded and parsed");
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+      <h1></h1>
+
+      <div>
+        <button id="menubutton" aria-haspopup="true" aria-controls="menu">
+          hamburger menu
+        </button>
+        <ul id="menu" role="menu" aria-labelledby="menubutton">
+          <li role="presentation">
+            <a role="menuitem" href="#description">Description</a>
+          </li>
+          <li role="presentation">
+            <a
+              role="menuitem"
+              href="#associated_wai-aria_roles_states_and_properties">
+              Associated WAI-ARIA roles, states, and properties
+            </a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="#keyboard_interactions">
+              Keyboard interactions
+            </a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="#examples">Examples</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="#specifications">Specifications</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="#see_also">See Also</a>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>
