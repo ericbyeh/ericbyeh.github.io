@@ -21,12 +21,34 @@
     <main>
       <h1>Aria Menu Demo</h1>
 
+      <h2>li as menuitem with span + img inside with tabindex 0</h2>
+      <div>
+        <button aria-haspopup="true" aria-controls="menu8">
+          hamburger 8
+        </button>
+        <ul id="menu8" role="menu">
+          <li role="menuitem" tabindex="0">
+            <span>Description</span>
+            <img src="check.jpg" alt="" />
+          </li>
+          <li role="menuitem" tabindex="0">
+            <span>Examples</span>
+            <img src="check.jpg" alt="" />
+          </li>
+          <li role="menuitem" tabindex="0">
+            <span>Specifications</span>
+            <img src="check.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <p>menuitem repeats in iOS VoiceOver</p>
+
       <h2>li as menuitem with span + img inside with tabindex -1</h2>
       <div>
-        <button id="menubutton7" aria-haspopup="true" aria-controls="menu7">
-          hamburger 2
+        <button aria-haspopup="true" aria-controls="menu7">
+          hamburger 7
         </button>
-        <ul id="menu7" role="menu" aria-labelledby="menubutton7">
+        <ul id="menu7" role="menu">
           <li role="menuitem" tabindex="-1">
             <span>Description</span>
             <img src="check.jpg" alt="" />
@@ -45,10 +67,10 @@
 
       <h2>li as menuitem with span + img inside</h2>
       <div>
-        <button id="menubutton6" aria-haspopup="true" aria-controls="menu6">
-          hamburger 2
+        <button aria-haspopup="true" aria-controls="menu6">
+          hamburger 6
         </button>
-        <ul id="menu6" role="menu" aria-labelledby="menubutton6">
+        <ul id="menu6" role="menu">
           <li role="menuitem">
             <span>Description</span>
             <img src="check.jpg" alt="" />
@@ -70,10 +92,10 @@
 
       <h2>li as menuitem with tabindex 0</h2>
       <div>
-        <button id="menubutton5" aria-haspopup="true" aria-controls="menu5">
+        <button aria-haspopup="true" aria-controls="menu5">
           ham 5
         </button>
-        <ul id="menu5" role="menu" aria-labelledby="menubutton5">
+        <ul id="menu5" role="menu">
           <li role="menuitem" tabindex="0">Description</li>
           <li role="menuitem" tabindex="0">Keyboard</li>
           <li role="menuitem" tabindex="0">Example</li>
@@ -85,10 +107,10 @@
 
       <h2>li as menuitem with tabindex -1</h2>
       <div>
-        <button id="menubutton4" aria-haspopup="true" aria-controls="menu4">
+        <button aria-haspopup="true" aria-controls="menu4">
           ham 4
         </button>
-        <ul id="menu4" role="menu" aria-labelledby="menubutton4">
+        <ul id="menu4" role="menu">
           <li role="menuitem" tabindex="-1">Description</li>
           <li role="menuitem" tabindex="-1">Keyboard</li>
           <li role="menuitem" tabindex="-1">Example</li>
@@ -100,10 +122,10 @@
 
       <h2>li as menuitem</h2>
       <div>
-        <button id="menubutton3" aria-haspopup="true" aria-controls="menu3">
+        <button aria-haspopup="true" aria-controls="menu3">
           ham 3
         </button>
-        <ul id="menu3" role="menu" aria-labelledby="menubutton3">
+        <ul id="menu3" role="menu">
           <li role="menuitem">Description</li>
           <li role="menuitem">Keyboard</li>
           <li role="menuitem">Example</li>
@@ -115,10 +137,10 @@
 
       <h2>li as menuitem with span inside</h2>
       <div>
-        <button id="menubutton2" aria-haspopup="true" aria-controls="menu2">
+        <button aria-haspopup="true" aria-controls="menu2">
           hamburger 2
         </button>
-        <ul id="menu2" role="menu" aria-labelledby="menubutton2">
+        <ul id="menu2" role="menu">
           <li role="menuitem">
             <span>Description</span>
           </li>
