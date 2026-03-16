@@ -21,17 +21,17 @@
     <main>
       <h1>Aria Menu Demo</h1>
 
-      <h2>li as menuitem with span + img inside with tabindex 0 and aria-selected</h2>
+      <h2>li as menuitem with span + img inside with tabindex 0 and aria-selected and expanded</h2>
       <div>
         <button aria-haspopup="true" aria-controls="menu8">
           hamburger 8
         </button>
-        <ul id="menu8" role="menu">
-          <li role="menuitem" tabindex="0" aria-selected="false">
+        <ul id="menu8" role="menu" aria-expanded="true">
+          <li role="menuitem" tabindex="0" aria-selected="true">
             <span>Description</span>
             <img src="check.jpg" alt="" />
           </li>
-          <li role="menuitem" tabindex="0" aria-selected="true">
+          <li role="menuitem" tabindex="0" aria-selected="false">
             <span>Examples</span>
             <img src="check.jpg" alt="" />
           </li>
