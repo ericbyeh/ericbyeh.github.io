@@ -21,21 +21,35 @@
     <main>
       <h1>Aria Menu Demo</h1>
 
+      <h2>li as menuitem with tabindex -1</h2>
+      <div>
+        <button id="menubutton4" aria-haspopup="true" aria-controls="menu4">
+          ham 3
+        </button>
+        <ul id="menu4" role="menu" aria-labelledby="menubutton4">
+          <li role="menuitem" tabindex="-1">Description</li>
+          <li role="menuitem" tabindex="-1">Keyboard</li>
+          <li role="menuitem" tabindex="-1">Example</li>
+        </ul>
+      </div>
+      <p>menuitem repeats in iOS VoiceOver</p>
+
       <h2>li as menuitem</h2>
       <div>
         <button id="menubutton3" aria-haspopup="true" aria-controls="menu3">
           ham 3
         </button>
-        <ul id="menu2" role="menu" aria-labelledby="menubutton3">
+        <ul id="menu3" role="menu" aria-labelledby="menubutton3">
           <li role="menuitem">Description</li>
-          <li role="menuitem">property</li>
           <li role="menuitem">Keyboard</li>
           <li role="menuitem">Example</li>
-          <li role="menuitem">Specification</li>
         </ul>
       </div>
+      <p>menuitem repeats in iOS VoiceOver</p>
 
-      <h2>li as menuitem with span</h2>
+
+
+      <h2>li as menuitem with span inside</h2>
       <div>
         <button id="menubutton2" aria-haspopup="true" aria-controls="menu2">
           hamburger 2
@@ -45,24 +59,16 @@
             <span>Description</span>
           </li>
           <li role="menuitem">
-            <span>Associated WAI-ARIA roles, states, and properties</span>
-          </li>
-          <li role="menuitem">
-            <span>
-              Keyboard interactions
-            </span>
-          </li>
-          <li role="menuitem">
             <span>Examples</span>
           </li>
           <li role="menuitem">
             <span>Specifications</span>
           </li>
-          <li role="menuitem">
-            <span>See Also</span>
-          </li>
         </ul>
       </div>
+      <p>menuitem repeats in iOS VoiceOver</p>
+
+
 
       <h2>MDN - ARIA: menuitem role</h2>
       <div>
@@ -74,28 +80,14 @@
             <a role="menuitem" href="#description">Description</a>
           </li>
           <li role="presentation">
-            <a
-              role="menuitem"
-              href="#associated_wai-aria_roles_states_and_properties">
-              Associated WAI-ARIA roles, states, and properties
-            </a>
-          </li>
-          <li role="presentation">
-            <a role="menuitem" href="#keyboard_interactions">
-              Keyboard interactions
-            </a>
-          </li>
-          <li role="presentation">
             <a role="menuitem" href="#examples">Examples</a>
           </li>
           <li role="presentation">
             <a role="menuitem" href="#specifications">Specifications</a>
           </li>
-          <li role="presentation">
-            <a role="menuitem" href="#see_also">See Also</a>
-          </li>
         </ul>
       </div>
+      <p>menuitem does NOT repeat in iOS VoiceOver</p>
 
     </main>
 
